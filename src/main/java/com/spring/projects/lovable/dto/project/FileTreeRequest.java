@@ -1,8 +1,6 @@
 package com.spring.projects.lovable.dto.project;
 
-import java.time.Instant;
+import java.util.List;
 
-public record FileTreeRequest(
-
-) {
+public record FileTreeRequest(List<FileNode> files) {
 }
