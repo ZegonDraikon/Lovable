@@ -11,4 +11,6 @@ public interface ProjectMemberService {
     List<ProjectMember> getProjectMember(Long projectId, Long userId);
 
     MemberResponse inviteMember(Long projectId, InviteMemberRequest request, Long userId);
+
+    @Nullable MemberResponse updateMemberRole(long projectId, long memberId, InviteMemberRequest request, Long userId);
 }
