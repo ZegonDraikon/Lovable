@@ -46,13 +46,13 @@ public class ProjectMemberController {
         return ResponseEntity.ok(projectMemberService.updateMemberRole(projectId, memberId, request, userId));
     }
     @DeleteMapping("/{memberId}")
-    public ResponseEntity<MemberResponse> updateMemberRole (
+    public ResponseEntity<MemberResponse> deleteMemberRole (
             @PathVariable long projectId,
             @PathVariable long memberId,
             @RequestBody InviteMemberRequest request
     ) {
         Long userId = 1L;
-        return ResponseEntity.ok(projectMemberService.updateMemberRole(projectId, memberId, request, userId));
+        return ResponseEntity.ok(projectMemberService.deleteMemberRole(projectId, memberId, request, userId));
     }
 
 }

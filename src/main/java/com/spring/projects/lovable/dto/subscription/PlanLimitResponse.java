@@ -1,0 +1,9 @@
+package com.spring.projects.lovable.dto.subscription;
+
+public record PlanLimitResponse(
+        String planName,
+        int maxTokensPerDay,
+        int maxProjects,
+        boolean unlimitedAi
+) {
+}

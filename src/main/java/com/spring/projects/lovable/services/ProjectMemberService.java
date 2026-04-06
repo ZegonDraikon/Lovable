@@ -13,4 +13,6 @@ public interface ProjectMemberService {
     MemberResponse inviteMember(Long projectId, InviteMemberRequest request, Long userId);
 
     @Nullable MemberResponse updateMemberRole(long projectId, long memberId, InviteMemberRequest request, Long userId);
+
+    @Nullable MemberResponse deleteMemberRole(long projectId, long memberId, InviteMemberRequest request, Long userId);
 }
