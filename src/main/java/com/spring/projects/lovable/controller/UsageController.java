@@ -22,7 +22,7 @@ public class UsageController {
     }
 
     @GetMapping("/limits")
-    public ReponseEntity<PlanLimitResponse> getPlanLimits() {
+    public ResponseEntity<PlanLimitResponse> getPlanLimits() {
         Long userId = 1L;
         return ResponseEntity.ok(usageService.getCurrentSubscriptionLimitsOfUser(userId));
     }
